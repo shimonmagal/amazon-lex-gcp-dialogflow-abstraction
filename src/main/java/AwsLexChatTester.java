@@ -1,3 +1,12 @@
+import com.amazonaws.regions.Regions;
+import com.amazonaws.services.lexruntime.AmazonLexRuntime;
+import com.amazonaws.services.lexruntime.AmazonLexRuntimeClientBuilder;
+import com.amazonaws.services.lexruntime.model.PostTextRequest;
+import com.amazonaws.services.lexruntime.model.PostTextResult;
+import com.amazonaws.util.StringUtils;
+
+import java.util.Scanner;
+
 public class AwsLexChatTester
 {
     public static void init()
@@ -11,7 +20,7 @@ public class AwsLexChatTester
         Scanner scanner = new Scanner(System.in);
         while(true) {
             String requestText = scanner.nextLine().trim();
-            if(isEmpty(requestText))
+            if(StringUtils.isNullOrEmpty(requestText))
                 break;
 
             textRequest.setInputText(requestText);
@@ -24,7 +33,5 @@ public class AwsLexChatTester
                 System.out.println(textResult.toString());
 
         }
-        System.out.println("Bye.");
     }
-
 }
