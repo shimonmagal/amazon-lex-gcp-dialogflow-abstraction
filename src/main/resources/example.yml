@@ -1,0 +1,13 @@
+botName: alice
+version: 1.0
+superIntents:
+  - A:
+    - Q
+  - B
+  - C
+  - D
+
+A:
+  - How are you?
+  - How are you doing?
+  - What's up?
