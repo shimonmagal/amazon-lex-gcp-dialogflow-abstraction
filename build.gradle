@@ -11,7 +11,10 @@ repositories {
 
 dependencies {
     implementation group: 'com.fasterxml.jackson.dataformat', name: 'jackson-dataformat-yaml', version: '2.12.2'
+
     implementation group: 'com.amazonaws', name: 'aws-java-sdk-lex', version: '1.11.963'
+
+    implementation group: 'com.google.cloud', name: 'google-cloud-dialogflow', version: '2.6.1'
 
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
