@@ -7,7 +7,7 @@ import com.amazonaws.util.StringUtils;
 
 import java.util.Scanner;
 
-public class AwsLexChatTester
+public class AwsLexChatCreator
 {
     public static void init()
     {
