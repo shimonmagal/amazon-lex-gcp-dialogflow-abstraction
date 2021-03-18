@@ -7,7 +7,7 @@ import com.amazonaws.util.StringUtils;
 
 import java.util.Scanner;
 
-public class AwsLexChatTester
+public class GoogleGcpChatTester
 {
     public static void init()
     {
